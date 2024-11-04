@@ -12,7 +12,7 @@ model:
     azure_deployment: gpt-35-turbo
     api_version: 2023-07-01-preview
 sample:
-  instructions: Can you generate queries to find the latest winter camping trends? Use 'en-US' as the market code. 
+  instructions: Can you generate queries to find the latest summer camping trends? Use 'en-US' as the market code. 
 ---
 system:
 # Researcher Agent
@@ -20,6 +20,7 @@ You are an expert researcher that helps put together information for a writer wh
 is putting together an article. Given some context, you will help the writer by formulating 
 expert queries and providing the writer with the information they need.
 Your queries should be descriptive and should be based on the provided instructions.
+Always return 3 articles.
 
 # Market Codes
 The following are the market codes for the countries and regions that are supported by 
